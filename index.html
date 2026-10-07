@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-    <meta charset="utf-8" >
+    <meta charset="utf-8">
+    <!-- เพิ่มบรรทัดนี้ สำคัญมากสำหรับการทำให้พอดีกับหน้าจอมือถือ/อุปกรณ์ต่างๆ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ระบบยืมครุภัณฑ์อุปกรณ์คอมพิวเตอร์</title>
+    <style>
+        /* Make the body and html take up the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* ป้องกันการเลื่อนหน้าจอของตัวหน้าหลัก */
+        }
+        /* Make the iframe take up the full height and width of the viewport */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove iframe border */
+            display: block; /* ป้องกันช่องว่างแปลกๆ ด้านล่างของ iframe */
+        }
+    </style>
 </head>
-<style>
-    /* Make the body and html take up the full height of the viewport */
-    html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        overflow: hidden; /* Prevent scrolling */
-    }
-    /* Make the iframe take up the full height and width of the viewport */
-    iframe {
-        width: 100%;
-        height: 100%;
-        border: none; /* Remove iframe border */
-    }
-</style>
 <body>
 
-<iframe src="https://script.google.com/macros/s/AKfycbxcIuZkiKHYiEb5Vv8_3HS7zALfVVYNQvvAfXSoMSF4JscJXva_WTU6QUb__SX_wyKb/exec" height="100%" width="100%" scrolling="no"></iframe>
+<!-- แนะนำให้เปลี่ยน scrolling เป็น auto เพื่อให้เลื่อนจอได้เมื่อเนื้อหาด้านในยาวกว่าหน้าจอมือถือ -->
+<iframe src="https://script.google.com/macros/s/AKfycbxcIuZkiKHYiEb5Vv8_3HS7zALfVVYNQvvAfXSoMSF4JscJXva_WTU6QUb__SX_wyKb/exec" allowfullscreen="true" scrolling="auto"></iframe>
 
 </body>
 </html>
